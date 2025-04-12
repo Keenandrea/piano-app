@@ -63,15 +63,15 @@ function App() {
 
   const playMelody = async (notes) => {
     for (const note of notes) {
-      // The Piano component will handle the actual playback
       document.dispatchEvent(new CustomEvent('playNote', { detail: note }));
-      await new Promise(resolve => setTimeout(resolve, 500)); // Wait between notes
+      await new Promise(resolve => setTimeout(resolve, 600)); // Wait between notes
     }
   };
 
   return (
     <div className="app-container">
       <h1>React Piano App</h1>
+      <p className="app-description">Play piano with your mouse or keyboard (A-K keys)</p>
       
       <Piano onNotePlay={addNoteToMelody} />
       
