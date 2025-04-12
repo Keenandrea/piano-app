@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  h2 {
+    margin: 25px 0 15px;
+    color: #444;
+  }
+  
+  .controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .record-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .record-btn.recording {
+    background-color: #c0392b;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .save-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .play-btn {
+    background-color: #2ecc71;
+    color: white;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  
+  .melodies-list ul {
+    list-style-type: none;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .melodies-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .recording-info {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .recording-info p {
+    font-family: monospace;
+    margin-top: 10px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
